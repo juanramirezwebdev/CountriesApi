@@ -17,7 +17,7 @@ interface Country {
   };
 }
 
-const CountryList: React.FC = () => {
+const Countries: React.FC = () => {
   const [countries, setCountries] = useState<Country[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>('');
 
@@ -83,4 +83,4 @@ const getLanguage = (country: Country) => {
   return 'N/A';
 };
 
-export default CountryList;
+export default Countries;
